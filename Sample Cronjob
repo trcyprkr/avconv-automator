@@ -1,0 +1,11 @@
+30 2 18 2 * wget -O - http://www.blogtalkradio.com/yada/2017/02/18/sabbath-torah-study.mp3 > 17.02.18.btr.mp3
+30 2 25 2 * wget -O - http://www.blogtalkradio.com/yada/2017/02/25/sabbath-torah-study.mp3 > 17.02.25.btr.mp3
+30 2 04 3 * wget -O - http://www.blogtalkradio.com/yada/2017/03/04/sabbath-torah-study.mp3 > 17.03.04.btr.mp3
+30 2 11 3 * wget -O - http://www.blogtalkradio.com/yada/2017/03/11/sabbath-torah-study.mp3 > 17.03.11.btr.mp3
+30 2 18 3 * wget -O - http://www.blogtalkradio.com/yada/2017/03/18/sabbath-torah-study.mp3 > 17.03.18.btr.mp3
+30 2 25 3 * wget -O - http://www.blogtalkradio.com/yada/2017/03/25/sabbath-torah-study.mp3 > 17.03.25.btr.mp3
+01 3 * * Sat ~/bin/dropboxuploader.sh download /Observations
+* 3 * * Sat ~/bin/avconvautomator.sh
+* 5 * * Sun lftp
+* 7 * * Mon wget --spider http://blessyahowah.warrioroftruth.info/btr/podgen/pg-cron.php?key=q1yfun0x 
+05 7 * * Mon wget -- spider http://blessyahowah.warrioroftruth.info/ofot/podgen/pg-cron.php?key=7dttzxiw
